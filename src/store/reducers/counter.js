@@ -8,9 +8,6 @@ const initialState = {
 const reducer = ( state = initialState, action ) => {
     switch ( action.type ) {
         case actionTypes.INCREMENT:
-            //const newState = Object.assign({}, state);
-            //newState.counter = state.counter + 1;
-            //return newState;
             return updateObject(state, {counter: state.counter + 1});
         case actionTypes.DECREMENT:
             return updateObject(state, {counter: state.counter - 1});
